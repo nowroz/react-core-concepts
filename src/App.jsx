@@ -6,6 +6,7 @@ import Counter from "./Counter.jsx";
 import Users from "./Users.jsx";
 import Friends from "./friends.jsx";
 import Posts from "./Posts.jsx";
+import Players from "./Players.jsx";
 
 const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
   (response) => response.json(),
@@ -42,6 +43,8 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+
+      <Players></Players>
 
       <Suspense fallback={<h3>Fetching posts...</h3>}>
         <Posts postsPromise={postsPromise}></Posts>
