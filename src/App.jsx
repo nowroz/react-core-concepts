@@ -1,4 +1,5 @@
 import "./App.css";
+import Baller from "./Baller.jsx";
 import Batsman from "./Batsman.jsx";
 import Counter from "./Counter.jsx";
 
@@ -18,6 +19,8 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+
+      <Baller></Baller>
 
       <Batsman></Batsman>
 
